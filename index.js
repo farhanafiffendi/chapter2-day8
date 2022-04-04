@@ -37,6 +37,7 @@ app.get('/', function(req, res) {
         return {
             ...item,
             isLogin: isLogin,
+            description: item.description.slice(0, 60) + '....'
         }
     })
 

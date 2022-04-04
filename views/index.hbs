@@ -84,8 +84,8 @@
 
     <div class="container-form">
         {{#if isLogin}}
-        {{!-- <h1 style="text-align: center;">My Project</h1>
-        <div style="text-align: right; margin-right: 150px; margin-top: 50px">
+        <h1 style="text-align: center;">My Project</h1>
+        {{!-- <div style="text-align: right; margin-right: 150px; margin-top: 50px">
         <a href="/blog" style="background-color: orangered; padding: 10px 20px; border-radius: 5px; color: white; text-decoration: none">Add New Blog</a> --}}
         </div>
          {{/if}}
@@ -102,8 +102,9 @@
                         <a href="/blog-detail/{{@index}}" target="_blank">{{this.project}}</a><br>
                     </h4>
                     <p style="color: gray;">{{this.duration}}</p>
-                    {{this.description}}
-                    <br><br>
+                    <div>
+                        {{this.description}}
+                    </div> <br>
                     <i class="{{this.node}}" style="font-size: 30px;"></i>
                     <i class="{{this.react}}" style="font-size: 30px;"></i>
                     <i class="{{this.html}}" style="font-size: 30px;"></i>
